@@ -70,3 +70,23 @@ Prefix each commit message with the chapter it belongs to: `software-stack`, `da
 How a good commit message should look like: <https://cbea.ms/git-commit/>
 
 The use of `-s` / `--signoff` when creating a commit is optional, but strongly recommended.
+
+### Setting Up GitHub Name and Email
+
+To avoid common issues with authorship verification (such as []`checkpatch` errors](https://github.com/open-education-hub/operating-systems/actions/runs/6590761580/job/17908015178?pr=339#step:3:570)), it is important to make sure that your `git` configuration includes the correct name and email address, matching the ones associated with your GitHub account. You can configure this globally for all repositories or locally for a specific project.
+
+To set your Git author information globally, run the following commands:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+```
+
+If you prefer to set this information only for the current repository, omit the --global flag:
+
+```bash
+git config user.name "Your Name"
+git config user.email "your-email@example.com"
+```
+
+These should match the name and email [address associated with your GitHub account ](https://github.com/settings/profile).
