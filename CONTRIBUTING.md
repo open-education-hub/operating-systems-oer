@@ -90,4 +90,4 @@ git config user.name "Your Name"
 git config user.email "your-email@example.com"
 ```
 
-These should match the name and email [address associated with your GitHub account ](https://github.com/settings/profile).
+These should match the name and email address [associated with your GitHub account ](https://github.com/settings/profile).
