@@ -73,7 +73,7 @@ The use of `-s` / `--signoff` when creating a commit is optional, but strongly r
 
 ### Setting Up GitHub Name and Email
 
-To avoid common issues with authorship verification (such as []`checkpatch` errors](https://github.com/open-education-hub/operating-systems/actions/runs/6590761580/job/17908015178?pr=339#step:3:570)), it is important to make sure that your `git` configuration includes the correct name and email address, matching the ones associated with your GitHub account.
+To avoid common issues with authorship verification (such as `checkpatch` errors](https://github.com/open-education-hub/operating-systems/actions/runs/6590761580/job/17908015178?pr=339#step:3:570)), it is important to make sure that your `git` configuration includes the correct name and email address, matching the ones associated with your GitHub account.
 You can configure this globally for all repositories or locally for a specific project.
 
 To set your Git author information globally, run the following commands:
