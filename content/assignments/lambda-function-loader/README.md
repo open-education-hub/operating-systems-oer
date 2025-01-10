@@ -10,7 +10,7 @@ Discrepancies might arise between local environments and the dedicated OS virtua
 Grading will consider results obtained solely in the OS virtual machine environment.
 
 The core of this project revolves around the construction of a system capable of dynamic library loading and subsequent function execution.
-The project architecture embraces a [client-server model](https://cs-pub-ro.github.io/operating-systems/Lab/IO/client-server-model), where the server is responsible for receiving and fulfilling requests to execute functions sourced from specific dynamic libraries present within the system.
+The project architecture embraces a [client-server model](https://cs-pub-ro.github.io/operating-systems/IO/lab10#client-server-model), where the server is responsible for receiving and fulfilling requests to execute functions sourced from specific dynamic libraries present within the system.
 
 This functionality marks the initial phase toward realizing capabilities akin to [AWS Lambda](https://aws.amazon.com/lambda/).
 In this context, users can load and execute functions across distinct servers upon request.
@@ -19,7 +19,7 @@ Detailed below are the primary requisites and potential enhancements.
 
 ### Implementation Details and Notes
 
-The implementation involves the capability to receive commands utilizing [UNIX sockets](https://cs-pub-ro.github.io/operating-systems/Lab/IO/beyond-network-sockets#unix-sockets), encompassing the designation of a library (the path to the library file) and optionally specifying a function.
+The implementation involves the capability to receive commands utilizing [UNIX sockets](https://cs-pub-ro.github.io/operating-systems/IO/lab10#unix-sockets), encompassing the designation of a library (the path to the library file) and optionally specifying a function.
 A command transmitted from the client to the server conforms to the format: `<libname> [<funcname> [<filename>]]` where:
 
 - `libname` represents the path to the intended library.
@@ -87,14 +87,10 @@ The server's implementation must be robust, enabling continuous execution even i
 
 What is needed for the implementation of the proposed project:
 
-- Understanding inter-process communication - using Unix sockets and read/write or send/receive operations:
-  - [I/O Course](https://cs-pub-ro.github.io/operating-systems/Lecture/IO/)
-  - [I/O Lab](https://cs-pub-ro.github.io/operating-systems/I/O/)
+- Understanding inter-process communication - using Unix sockets and read/write or send/receive operations ([I/O Chapter](https://cs-pub-ro.github.io/operating-systems/IO/))
 - Understanding the API for loading/unloading libraries and executing functions from dynamic libraries:
   - Hint: `man dlopen`
-- Working with shared data between processes or threads:
-  - [Compute Course](https://cs-pub-ro.github.io/operating-systems/Lecture/Compute/)
-  - [Compute Lab](https://cs-pub-ro.github.io/operating-systems/Compute/)
+- Working with shared data between processes or threads ([Compute Chapter](https://cs-pub-ro.github.io/operating-systems/Compute/))
 - Working with memory
 - Working with files
 
